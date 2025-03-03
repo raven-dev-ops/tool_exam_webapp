@@ -1,0 +1,11 @@
+# Ignore node modules folder
+node_modules/
+
+# Ignore lock file
+package-lock.json
+
+# (Optional) Some common extras you might also want to ignore:
+# .env
+# .DS_Store
+# npm-debug.log
+# yarn.lock

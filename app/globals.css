@@ -1,0 +1,54 @@
+/* globals.css */
+
+/* 1) Set a relative base font size. 
+   100% usually ~16px (browser default). */
+   html {
+    font-size: 100%; 
+  }
+  
+  /* Body styling */
+  body {
+    margin: 0;
+    padding: 0;
+  
+    /* Allow vertical scrolling if content overflows */
+    overflow-y: auto;
+  
+    /* Default text color, background, and base font */
+    background: black;
+    color: white;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1rem; /* 1rem => ~16px if html font-size is 100% */
+  }
+  
+  /* 2) Optional media query => reduce font on narrow devices */
+  @media (max-width: 600px) {
+    body {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Optional fade-in animation for your main container */
+  .fade-container {
+    animation: fadeIn 0.6s ease-in-out;
+    /* You can add other styles here as needed */
+    /* e.g. display: flex; flex-direction: column; min-height: 100vh; etc. */
+  }
+  
+  /* Keyframes for the fade-in effect */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Example transitions for child elements if you want them to fade or animate */
+  .fade-container > * {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
