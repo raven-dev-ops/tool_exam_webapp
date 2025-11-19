@@ -180,7 +180,7 @@ export default function HomePage() {
               </h1>
             </div>
 
-            {/* Buttons => stacked vertically with transparent background */}
+            {/* Buttons + simple project task list */}
             <div
               style={{
                 transition: "opacity 1s ease-in-out",
@@ -224,6 +224,36 @@ export default function HomePage() {
                 >
                   Sign Up
                 </a>
+
+                {/* Simple task list for remaining project docs */}
+                <div
+                  style={{
+                    marginTop: "1.5rem",
+                    textAlign: "left",
+                    maxWidth: "260px",
+                  }}
+                >
+                  <h2
+                    style={{
+                      fontSize: "1.1rem",
+                      margin: "0 0 0.5rem 0",
+                    }}
+                  >
+                    Project Tasks
+                  </h2>
+                  <ul
+                    style={{
+                      margin: 0,
+                      paddingLeft: "1.25rem",
+                      fontSize: "0.95rem",
+                      lineHeight: 1.4,
+                    }}
+                  >
+                    <li>Document timeline in `timeline.md`</li>
+                    <li>Refine roadmap in `roadmap.md`</li>
+                    <li>Expand `wiki.md` with more details</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
